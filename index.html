@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Multi-page template</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+	<link rel="stylesheet" href="css/AndroidHoloDarkLight.css" />
+    <link rel="stylesheet" href="jqm/jquery.mobile.structure-1.3.0.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" />
+
+    <script src="jq/jquery-1.9.1.min.js"></script>
+    <script src="jqm/jquery.mobile-1.3.0.min.js"></script>
+    <script src="jqm/jquery.mobile-1.3.0.min.css"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+     <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css"></script>
+</head> 
+
+	
+<body> 
+
+<!-- INICIA PAGINA: #one // HOME-->
+<div data-role="page" id="one">
+
+	<div data-role="header">
+		<h1>RUTEH</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+                <div style=" text-align:center">
+                    <img style="width: 290px; height: px" src="http://cdn.madamenoire.com/wp-content/uploads/2011/08/recent_public_transportation_research.jpg" />
+                </div>
+                <a data-role="button" data-theme="a" href="#two" data-icon="home" data-iconpos="left">
+                    ENTRAR
+                </a>
+    </div>
+	
+	
+</div><!-- /HOME -->
+
+
+<!-- INICIA PAINA: #two  // MENU-->
+<div data-role="page" id="two">
+            <div data-theme="a" data-role="header">
+                <h3>
+                <label class="">RUTEH</label>
+                </h3>
+            </div>
+            <div data-role="content">
+                <div style="">
+                    <img style="width: 100%; height: 100px" src="http://cdn.madamenoire.com/wp-content/uploads/2011/08/recent_public_transportation_research.jpg" />
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#two" data-transition="fade" data-theme="a" data-icon="home">
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#three" data-transition="fade" data-theme="a" data-icon="star">
+                                RUTAS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="search">
+                                PARADAS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="info">
+                                INFO
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+</div><!-- /MENU -->
+
+<!-- INICIA PAGINA: #three // RUTAS-->
+<div data-role="page" id="three">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <h3>
+            RECORRIDOS
+        </h3>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                SELECCIONE LAS RUTAS
+            </li>
+            <li data-theme="a">
+                <a href="#page1" data-transition="slide">
+                    RUTAS 1 - 10
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page1" data-transition="slide">
+                    RUTAS 10 - 20
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page1" data-transition="slide">
+                    RUTAS 21 - 30
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page1" data-transition="slide">
+                    RUTAS 31 - 40
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page1" data-transition="slide">
+                    RUTAS 41 - 42
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+           <ul>
+                        <li>
+                            <a href="#two" data-rel="back" data-transition="fade" data-inline="true" data-theme="a" data-icon="home">
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#three" data-transition="fade" data-theme="a" data-icon="star">
+                                RUTAS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="search">
+                                PARADAS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="info">
+                                INFO
+                            </a>
+                        </li>
+                    </ul>
+        </div>
+    </div>
+</div>
+
+<!-- /RUTAS -->
+
+</body>
+</html>
