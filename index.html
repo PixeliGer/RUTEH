@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>Multi-page template</title> 
+	<title>RUTEH</title> 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
 	<link rel="stylesheet" href="css/AndroidHoloDarkLight.css" />
     <link rel="stylesheet" href="jqm/jquery.mobile.structure-1.3.0.min.css" />
@@ -15,7 +15,24 @@
     <script src="jqm/jquery.mobile-1.3.0.min.css"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
-     <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css"></script>
+    <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css"></script>
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.map.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/HPNeo/gmaps/master/gmaps.js"></script>
+
+
+    <!-- ###################################-->
+
+
+    <!-- ###################################-->
+
+
+
+
+
 </head> 
 
 	
@@ -67,12 +84,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="search">
+                            <a href="#four" data-transition="fade" data-theme="a" data-icon="search">
                                 PARADAS
                             </a>
                         </li>
                         <li>
-                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="info">
+                            <a href="#five" data-transition="fade" data-theme="a" data-icon="info">
                                 INFO
                             </a>
                         </li>
@@ -89,7 +106,7 @@
         </h3>
     </div>
     <div data-role="content">
-        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
             <li data-role="list-divider" role="heading">
                 SELECCIONE LAS RUTAS
             </li>
@@ -124,6 +141,47 @@
         <div data-role="navbar" data-iconpos="top">
            <ul>
                         <li>
+                            <a href="#two" data-transition="fade" data-inline="true" data-theme="a" data-icon="home">
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#three" data-transition="fade" data-theme="a" data-icon="star">
+                                RUTAS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#four" data-transition="fade" data-theme="a" data-icon="search">
+                                PARADAS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#five" data-transition="fade" data-theme="a" data-icon="info">
+                                INFO
+                            </a>
+                        </li>
+                    </ul>
+        </div>
+    </div>
+</div>
+
+<!-- /RUTAS -->
+
+<!-- INICIA PAGINA: #four // PARADAS -->
+<div data-role="page" id="four">
+    <div data-theme="a" data-role="header">
+        <h3>
+            PARADAS
+        </h3>
+    </div>
+    <div data-role="content">
+        
+    
+     </div>
+     <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+           <ul>
+                        <li>
                             <a href="#two" data-rel="back" data-transition="fade" data-inline="true" data-theme="a" data-icon="home">
                                 HOME
                             </a>
@@ -134,21 +192,68 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="search">
+                            <a href="#four" data-transition="fade" data-theme="a" data-icon="search">
                                 PARADAS
                             </a>
                         </li>
                         <li>
-                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="info">
+                            <a href="#five" data-transition="fade" data-theme="a" data-icon="info">
                                 INFO
                             </a>
                         </li>
                     </ul>
         </div>
     </div>
-</div>
 
-<!-- /RUTAS -->
+    
+    
+    
+</div>
+<!-- /PARADAS -->
+
+<!-- INICIA PAGINA: #five // INFO -->
+<div data-role="page" id="five">
+    <div data-theme="a" data-role="header">
+        <h3>
+            INFO
+        </h3>
+    </div>
+    <div data-role="content">
+        
+    
+     </div>
+     <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+           <ul>
+                        <li>
+                            <a href="#two" data-transition="fade" data-inline="true" data-theme="a" data-icon="home">
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#three" data-transition="fade" data-theme="a" data-icon="star">
+                                RUTAS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#four" data-transition="fade" data-theme="a" data-icon="search">
+                                PARADAS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#five" data-transition="fade" data-theme="a" data-icon="info">
+                                INFO
+                            </a>
+                        </li>
+                    </ul>
+        </div>
+    </div>
+
+    
+    
+    
+</div>
+<!-- INFO -->
 
 </body>
 </html>
